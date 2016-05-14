@@ -16,7 +16,7 @@ import retrofit2.http.Path;
 /**
  * AfterShip API collection interface.
  */
-public interface AfterShipAPI {
+public interface AfterShipApi {
 
     @GET("trackings/{slug}/{tracking_number}/")
     Call<SingleTrackingResponse> getTrackingDetail(

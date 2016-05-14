@@ -1,6 +1,6 @@
 package prashantwosti.aftershipsdk;
 
-import prashantwosti.aftershipsdk.tracking.AfterShipAPI;
+import prashantwosti.aftershipsdk.tracking.AfterShipApi;
 import prashantwosti.aftershipsdk.tracking.RetrofitFactory;
 import prashantwosti.aftershipsdk.tracking.createtracking.CreateTrackingResponse;
 import prashantwosti.aftershipsdk.tracking.createtracking.TrackingRequest;
@@ -21,7 +21,7 @@ import retrofit2.Retrofit;
 public class AfterShip {
 
     private String apiKey;
-    private AfterShipAPI api;
+    private AfterShipApi api;
 
     /**
      * @param apiKey apikey from AfterShip.
@@ -39,9 +39,9 @@ public class AfterShip {
     /**
      * Initializes service adapter.
      */
-    private AfterShipAPI init() {
+    private AfterShipApi init() {
         Retrofit retrofit = new RetrofitFactory(apiKey).getAdapter();
-        return retrofit.create(AfterShipAPI.class);
+        return retrofit.create(AfterShipApi.class);
     }
 
     /**

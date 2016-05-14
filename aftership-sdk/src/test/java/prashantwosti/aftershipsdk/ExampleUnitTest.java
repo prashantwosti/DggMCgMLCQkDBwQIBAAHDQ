@@ -10,7 +10,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import prashantwosti.aftershipsdk.tracking.AfterShipAPI;
+import prashantwosti.aftershipsdk.tracking.AfterShipApi;
 import prashantwosti.aftershipsdk.tracking.createtracking.CreateTrackingResponse;
 import prashantwosti.aftershipsdk.tracking.createtracking.TrackingRequest;
 import prashantwosti.aftershipsdk.tracking.singletracking.TrackingDetailData;
@@ -24,7 +24,7 @@ public class ExampleUnitTest extends TestCase {
     AfterShip afterShip;
 
     @Mock
-    AfterShipAPI api;
+    AfterShipApi api;
 
     @Before
     public void setUp() throws Exception {

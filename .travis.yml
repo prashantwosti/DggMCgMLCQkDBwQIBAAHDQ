@@ -22,9 +22,9 @@ before_install:
 
 script:
     - android list target
-    - ./gradlew clean
+    #- ./gradlew clean
     #- ./gradlew assembleDebug
-    #- gradle clean check
+    - ./gradlew clean check
     #- ./gradlew build connectedCheck
     #- ./gradlew assembleDebugAndroidTest
-    - ./gradlew connectedAndroidTest
+    #- ./gradlew connectedAndroidTest

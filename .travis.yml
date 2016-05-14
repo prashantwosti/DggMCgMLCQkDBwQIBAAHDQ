@@ -24,6 +24,7 @@ script:
     - android list target
     - ./gradlew clean
     - ./gradlew assembleDebug
-    - ./gradlew build connectedCheck
+    - gradle clean check
+    #- ./gradlew build connectedCheck
     #- ./gradlew assembleDebugAndroidTest
     #- ./gradlew connectedAndroidTest

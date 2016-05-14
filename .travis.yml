@@ -22,5 +22,8 @@ before_install:
 
 script:
     - android list target
-    - ./gradlew build connectedCheck
-    - ./gradlew connectedAndroidTest
+    - ./gradlew clean
+    - ./gradlew assembleDebug
+    - ./gradlew assembleDebugAndroidTest
+    #- ./gradlew build connectedCheck
+    #- ./gradlew connectedAndroidTest

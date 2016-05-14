@@ -15,6 +15,7 @@ import prashantwosti.aftershipsdk.tracking.createtracking.CreateTrackingResponse
 import prashantwosti.aftershipsdk.tracking.createtracking.TrackingRequest;
 import prashantwosti.aftershipsdk.tracking.singletracking.TrackingDetailData;
 
+
 /**
  * To work on unit tests, switch the Test Artifact in the Build Variants view.
  */

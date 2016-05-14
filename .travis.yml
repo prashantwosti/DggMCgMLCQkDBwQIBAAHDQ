@@ -6,16 +6,21 @@ android:
     - build-tools-23.0.3
     - android-23
     - extra-android-m2repository
+    - sys-img-armeabi-v7a-android-23
 
   licenses:
     - android-sdk-license-.+
 
-env:
-  matrix:
-    - ANDROID_TARGET=android-23  ANDROID_ABI=armeabi-v7a
+before_script:
+    - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
+    - emulator -avd test -no-skin -no-audio -no-window &
+    - android-wait-for-emulator
+    - adb shell input keyevent 82 &
 
 before_install:
     - chmod +x gradlew
 
 script:
+    - android list target
     - ./gradlew build connectedCheck
+    - ./gradlew connectedAndroidTest
